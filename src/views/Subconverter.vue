@@ -255,8 +255,27 @@ export default {
           ClashR: "clashr",
           Surge2: "surge&ver=2",
         },
-        backendOptions: [{ value: "http://127.0.0.1:25500/sub?" }],
+        backendOptions: [
+          { 
+            value: "http://127.0.0.1:25500/sub?" 
+          },
+          {
+            label: "bianyuan",
+            value: "https://pub-api-1.bianyuan.xyz/sub?"
+
+          }
+        ],
         remoteConfig: [
+          {
+            label: "Northword",
+            options: [
+              {
+                label: "ACL4SSR_Online_Full_Northword",
+                value:
+                  "https://raw.githubusercontent.com/northword/Scripts/main/Clash/ACL4SSR_Online_Full_Northword.ini"
+              }
+            ]
+          },
           {
             label: "universal",
             options: [
@@ -338,7 +357,7 @@ export default {
         sourceSubUrl: "",
         clientType: "",
         customBackend: "",
-        remoteConfig: "",
+        remoteConfig: "https://raw.githubusercontent.com/northword/Scripts/main/Clash/ACL4SSR_Online_Full_Northword.ini",
         excludeRemarks: "",
         includeRemarks: "",
         filename: "",
