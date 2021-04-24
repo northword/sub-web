@@ -28,7 +28,7 @@ jobs:
         yarn install
         yarn build
 
-    - name: Deploy 🚀
+    - name: Deploy
       uses: peaceiris/actions-gh-pages@v3.7.3
       with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
