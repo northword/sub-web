@@ -365,7 +365,7 @@ export default {
         sourceSubUrl: "",
         clientType: "",
         customBackend: "",
-        remoteConfig: "",
+        remoteConfig: "https://raw.githubusercontent.com/northword/Scripts/main/Clash/ACL4SSR_Online_Full_Northword.ini",
         excludeRemarks: "",
         includeRemarks: "",
         filename: "",
