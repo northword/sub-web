@@ -36,7 +36,7 @@
                     style="width: 100%"
                     v-model="form.customBackend"
                     :fetch-suggestions="backendSearch"
-                    placeholder="动动小手，（建议）自行搭建后端服务。例：http://127.0.0.1:25500/sub?"
+                    placeholder="后端地址，留空默认调用api.wcc.best"
                   >
                     <el-button slot="append" @click="gotoGayhub" icon="el-icon-link">前往项目仓库</el-button>
                   </el-autocomplete>
@@ -273,6 +273,14 @@ export default {
                 label: "ACL4SSR_Online_Full_Northword",
                 value:
                   "https://raw.githubusercontent.com/northword/Scripts/main/Clash/ACL4SSR_Online_Full_Northword.ini"
+              },
+              {
+                label: "ACL4SSR_Online_Full",
+                value: "https://raw.githubusercontent.com/tindy2013/subconverter/master/base/config/ACL4SSR_Online_Full.ini"
+              },
+              {
+                label: "ACL4SSR_Online_Mini",
+                value: "https://raw.githubusercontent.com/tindy2013/subconverter/master/base/config/ACL4SSR_Online_Mini.ini"
               }
             ]
           },
@@ -357,7 +365,7 @@ export default {
         sourceSubUrl: "",
         clientType: "",
         customBackend: "",
-        remoteConfig: "https://raw.githubusercontent.com/northword/Scripts/main/Clash/ACL4SSR_Online_Full_Northword.ini",
+        remoteConfig: "",
         excludeRemarks: "",
         includeRemarks: "",
         filename: "",
