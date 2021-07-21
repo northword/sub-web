@@ -256,10 +256,10 @@ export default {
           Surge2: "surge&ver=2",
         },
         backendOptions: [
-		  {
-		    label: "api.wcc.best",
-		    value: "https://api.wcc.best/sub?"
-		  },
+          {
+            label: "api.wcc.best",
+            value: "https://api.wcc.best/sub?"
+          },
           {
             label: "bianyuan.xyz",
             value: "https://pub-api-1.bianyuan.xyz/sub?"
